@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/inputFragment"
+        android:enabled="true"
+        android:title="@string/add_phrase"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/phraseTableFragment"
+        android:enabled="true"
+        android:title="@string/phrases"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/importFile"
+        android:enabled="true"
+        android:title="@string/import_file"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/export"
+        android:enabled="true"
+        android:icon="@android:drawable/ic_menu_share"
+        android:title="@string/export"
+        android:visible="true"
+        app:showAsAction="ifRoom|withText" />
+</menu>

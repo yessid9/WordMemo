@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".InputFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/phrase_text"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/phrase" />
+
+        <EditText
+            android:id="@+id/phrase_input"
+            style="@style/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="false"
+            android:ems="10"
+            android:hint="@string/phrase"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/translation_text"
+            style="@style/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/translation" />
+
+        <EditText
+            android:id="@+id/translation_input"
+            style="@style/input"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:autofillHints="true"
+            android:ems="10"
+            android:hint="@string/translation"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/save_button"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_add"
+            android:text="@string/add"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+</layout>
